@@ -75,7 +75,7 @@ function makeSound(key){
             mixtoy.play();
             break;
     
-        default: console.log();
+        default: console.log(key);
         break;
             
     }
