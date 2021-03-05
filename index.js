@@ -1,5 +1,5 @@
-var noOfdrumButtons  = document.querySelectorAll(".drum").length;
 
+var noOfdrumButtons  = document.querySelectorAll(".drum").length;
 
 //detecting buttonpress.
 for (var i = 0; i < noOfdrumButtons; i++){
@@ -16,14 +16,14 @@ for (var i = 0; i < noOfdrumButtons; i++){
 }
 
 
-//detecting buttonPress
+//detecting a key Press
 document.addEventListener("keydown", function(event){
 
     makeSound(event.key);
     buttonAnnimation(event.key);
 
 });
-
+//sound made whenever the keys are pressed
 function makeSound(key){
 
     switch (key) {
@@ -94,9 +94,3 @@ function buttonAnnimation(currentKey){
 
 
 }
-
-
-
-
-
-
